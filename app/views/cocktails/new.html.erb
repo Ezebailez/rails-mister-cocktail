@@ -1,10 +1,13 @@
-<h3>Create your cocktail</h3>
 
-<%= simple_form_for @cocktail do |f| %>
-  <%= f.input :name %>
-  <%= f.association :ingredients %>
-  <%= f.association :doses %>
-  <%= f.submit class: "btn btn-primary btn-lg" %>
-<% end %>
-<br>
-<%= link_to "Go Back", cocktails_path, class: "btn btn-primary btn-lg"%>
+<div class="container">
+  <h3>Create your cocktail</h3>
+
+  <%= simple_form_for @cocktail do |f| %>
+    <%= f.input :name %>
+    <%= f.association :ingredients %>
+    <%= f.association :doses %>
+    <%= f.submit class: "btn btn-primary btn-lg" %>
+  <% end %>
+  <br>
+  <%= link_to "Go Back", cocktails_path, class: "btn btn-primary btn-lg"%>
+</div>
