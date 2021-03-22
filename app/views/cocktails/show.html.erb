@@ -1,4 +1,10 @@
 
-<h1><%= @cocktail.name %></h1>
+<div class="container">
 
-<%= link_to "All cocktails", cocktails_path, class: "btn btn-primary btn-lg"%>
+  <h1><%= @cocktail.name %></h1>
+
+  <%= link_to "Delete cocktail", cocktails_path, class: "btn btn-primary btn-lg"%>
+
+  <%= link_to "All cocktails", cocktails_path, class: "btn btn-primary btn-lg"%>
+
+</div>
