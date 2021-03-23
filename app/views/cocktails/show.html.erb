@@ -3,8 +3,8 @@
 
   <h1><%= @cocktail.name %></h1>
 
-  <%= link_to "Delete cocktail", cocktails_path, class: "btn btn-primary btn-lg"%>
-
-  <%= link_to "All cocktails", cocktails_path, class: "btn btn-primary btn-lg"%>
+  <%= link_to "Spill cocktail", @cocktail, :confirm => "Are you sure?", :method => :delete %>
+|
+  <%= link_to "All cocktails", cocktails_path %>
 
 </div>
